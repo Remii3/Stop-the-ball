@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+
+i {
+    color: rgb(68, 61, 61);
+}
+
+/* //// */
+
+.stripe1 {
+    height: 100vh;
+    width: 10vw;
+    position: absolute;
+    left: 50%;
+    background-color: red;
+    transform: translateX(-50%);
+    transition: .6s;
+}
+
+.stripe2 {
+    height: 100vh;
+    width: 5.5vw;
+    position: absolute;
+    left: 50%;
+    background-color: orange;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+.stripe3 {
+    height: 100vh;
+    width: 1.5vw;
+    position: absolute;
+    left: 50%;
+    background-color: black;
+    transform: translateX(-50%);
+    transition: .2s;
+}
+
+.kropka {
+    height: 1.5vh;
+    width: 1.5vh;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 4;
+    background-color: grey;
+    border: 1px black solid;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+/* //// */
+
+.menuSide {
+    height: 20vh;
+    width: 10vw;
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.menuSideButton {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 23.5%;
+    right: 0%;
+    background-color: rgb(172, 166, 166);
+    border: rgb(175, 169, 169) 2px solid;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.dif1 {
+    height: 5vh;
+    width: 8vw;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%, -5%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.dif2 {
+    height: 5vh;
+    width: 8vw;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.dif3 {
+    height: 5vh;
+    width: 8vw;
+    position: absolute;
+    top: 95%;
+    right: 50%;
+    transform: translate(50%, -95%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.lefto {
+
+    right: 10%;
+}
+
+.lefto2 {
+    right: 0%;
+}
+
+.default.str {
+    animation: move 4s linear infinite;
+}
+
+.moderate.str {
+    animation: move 3s linear infinite;
+}
+
+.impossible.str {
+    animation: move 1.5s linear infinite;
+}
+
+.stp.default {
+    animation: move 4s linear infinite paused;
+}
+
+.stp.moderate {
+    animation: move 3s linear infinite paused;
+}
+
+.stp.impossible {
+    animation: move 1.5s linear infinite paused;
+}
+
+/* //// */
+
+.menuBottom {
+    height: 10vh;
+    width: 27vw;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: whitesmoke;
+    border: 1px rgb(180, 179, 179) solid;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.start {
+    height: 5vh;
+    width: 7vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-170%, 50%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.stop {
+    height: 5vh;
+    width: 7vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.reset {
+    height: 5vh;
+    width: 7vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(70%, 50%);
+    z-index: 9;
+    background-color: rgb(173, 169, 169);
+    border: 1px solid lightgray;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/* //// */
+
+.themeButton {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    background-color: rgb(172, 166, 166);
+    border: rgb(175, 169, 169) 2px solid;
+    border-radius: 50%;
+
+}
+
+.newColorBody {
+    background-color: rgb(36, 36, 187);
+}
+
+.newColorStrip1 {
+    background-color: rgb(173, 241, 70);
+}
+
+.newColorStripe2 {
+    background-color: rgb(202, 41, 74);
+}
+
+.newColorStripe3 {
+    background-color: rgb(245, 178, 189);
+}
+
+.newColorKropka {
+    background-color: white;
+}
+
+.newColorMenu {
+    background-color: rgb(109, 106, 106);
+    border: 1px black solid;
+
+}
+
+.newColorButtons {
+    background-color: whitesmoke;
+}
+
+.ikonka {
+    color: rgb(228, 225, 225);
+}
+
+/* //// */
+
+@keyframes move {
+    0% {
+        top: 15%;
+        left: 15%;
+    }
+
+    10% {
+        top: 25%;
+        left: 75%;
+    }
+
+    20% {
+        top: 75%;
+        left: 15%;
+    }
+
+    30% {
+        top: 15%;
+        left: 15%;
+    }
+
+    40% {
+        top: 55%;
+        left: 85%;
+    }
+
+    60% {
+        top: 35%;
+        left: 30%;
+    }
+
+    80% {
+        top: 15%;
+        left: 95%;
+    }
+
+    100% {
+        top: 15%;
+        left: 15%;
+    }
+}
